@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email</title>
+    <!--[if mso]>
+    <style type="text/css">
+        table {border-collapse: collapse; border-spacing: 0; margin: 0;}
+        div, td {padding: 0;}
+        div {margin: 0 !important;}
+    </style>
+    <![endif]-->
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333333; background-color: #f4f7f6;">
+    
+    <!-- Preheader text (visible only in inbox preview, not in the email body) -->
+    <div style="display: none; max-height: 0px; overflow: hidden; color: transparent; opacity: 0;">
+        Action required: Please verify your email address to secure your account.
+    </div>
+
+    <!-- Main Background Wrapper -->
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #f4f7f6; padding: 40px 20px;">
+        <tr>
+            <td align="center">
+                
+                <!-- Email Container -->
+                <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); overflow: hidden;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td style="background-color: #2c3e50; padding: 30px 40px; text-align: center;">
+                            <!-- Replace text with an <img> tag if you have a company logo -->
+                            <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 1px;">learnQ.online</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 40px;">
+                            <h2 style="color: #2c3e50; margin-top: 0; font-size: 22px;">Welcome, {{ name }}!</h2>
+                            <p style="font-size: 16px; color: #555555; margin-bottom: 24px;">
+                                Thank you for registering. To ensure the security of your account and unlock full access to your workspace, please verify your email address by clicking the button below.
+                            </p>
+                            
+                            <!-- Call to Action Button -->
+                            <div style="text-align: center; margin: 35px 0;">
+                                <a href="{{ verification_url }}" 
+                                   style="background-color: #3498db; color: #ffffff; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 16px; display: inline-block;">
+                                   Verify Email Address
+                                </a>
+                            </div>
+                            
+                            <p style="font-size: 14px; color: #7f8c8d; margin-bottom: 0;">
+                                For your security, this verification link will automatically expire in 24 hours. If you did not create this account, you can safely ignore this email.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #fafafa; border-top: 1px solid #eeeeee; padding: 24px 40px; text-align: center;">
+                            <p style="font-size: 12px; color: #95a5a6; margin-top: 0; margin-bottom: 12px; word-break: break-all;">
+                                If the button above does not work, copy and paste this link into your browser:<br>
+                                <a href="{{ verification_url }}" style="color: #3498db; text-decoration: underline;">{{ verification_url }}</a>
+                            </p>
+                            <p style="font-size: 12px; color: #bbbbbb; margin: 0;">
+                                &copy; 2026 learnQ.online. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
